@@ -20,7 +20,7 @@
         <a href="./index.html" class="top-logo"><span class="logo-iris">Web</span>Studio</a>
         <nav class="top-nav">
                 <ul class="list nav">
-                    <li class="item"> <a href="./index.html" class="list-item">Studio</a> </li>
+                    <li class="item "> <a href="./index.html" class="list-item studio-line">Studio</a> </li>
                     <li class="item"> <a href="./portfolio.html" class="list-item">Portfolio</a> </li>
                     <li class="item"> <a href="/" class="list-item">Contacts</a> </li>
                 </ul>
@@ -38,8 +38,17 @@
 
         <section class="hero">
             <h1 class="hero-title">Effective Solutions <br> for Your Business</h1>
-            <button type="button" class="hero-button">Order Service</button>
+            <button data-modal-open type="button" class="hero-button">Order Service</button>
         </section>
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button data-modal-close type="button" class="modal-close" >
+                    <svg class="icon-close" width="8px" height="8px">
+                        <use href="./images/sprite.svg#icon-close"></use>
+                    </svg>
+                </button>
+            </div>
+        </div>
 
         <!--Секція 2 під hero-->
         <section class="feat">
@@ -113,7 +122,8 @@
                             <p class="list-text">Product Designer</p>
                             <div class="thumb-networks">
                                 <ul class="list networks">
-                                    <li class="network-li"><a href="/" class="network-item">
+                                    <li class="network-li">
+                                        <a href="/" class="network-item">
                                             <svg class="icon-instagram" width="16px" height="16px">
                                                 <use href="./images/sprite.svg#icon-instagram"></use>
                                             </svg>
@@ -297,7 +307,7 @@
             <h2 class="subtitle-media">Social media</h2>
             <div class="thumb-footer">
                 <ul class="list footer-neworks">
-                    <li><a href="/" class="footer-item instagram">
+                    <li><a href="/" class="footer-item">
                             <svg width="24px" height="24px">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                             </svg>
@@ -322,6 +332,7 @@
         </div>
     </div>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
